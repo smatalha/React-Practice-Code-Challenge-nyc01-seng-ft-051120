@@ -17,7 +17,17 @@ const SushiContainer = (props) => {
           )
           }
         </div>
-        <MoreButton />
+        <div>
+          {props.sushis.slice(4, 8).map(sushi =>
+            <MoreButton 
+              name={sushi.name}
+              img_url={sushi.img_url}
+              price={sushi.price}
+              id={sushi.id}
+              key={sushi.id} />
+          )
+         } 
+        </div>
       </div>
     </Fragment>
   )

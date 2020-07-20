@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div className="app">
         <SushiContainer sushis={this.state.sushis}/>
-        <Table />
+        <Table sushis={this.state.sushis} />
       </div>
     );
   }
